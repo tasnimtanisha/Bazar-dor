@@ -11,6 +11,18 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com", // GitHub ছবির ডোমেইন
+      },
+    ],
+  },
 };
 
 export default nextConfig;
